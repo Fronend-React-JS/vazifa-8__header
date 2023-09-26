@@ -1,51 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- 
- .herader__container{
-    width: 1400px;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.herader__container {
+  max-width: 1400px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: black;
+  h1 {
+    font-size: 28px;
+    color: white;
+  }
+
+  i {
+    width: 25px;
+    height: 15px;
+  }
+
+  .search_Empty {
+    button {
+      padding: 5px;
+      border: 2px solid white;
+    }
+  }
+}
+
+.language_list {
+  display: none;
+}
+
+.Menu_list {
+  display: none;
+}
+
+.title {
+  button {
     background-color: black;
-    h1{
-      font-size: 28px;
-      color: rgb(2, 201, 2);
+    color: white;
+    font-size: 18px;
+  }
+}
+
+.title-2 {
+  i {
+    display: none;
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  button {
+    border: none;
+    padding: 10px;
+    border: 2px solid white;
+  }
+
+  .Sigin-button {
+    button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: orange;
+      font-size: 16px;
+      color: white;
     }
 
-    i{
-      width: 25px;
-      height: 15px;
+    display: flex;
+    i {
+      display: none;
+      color: white;
     }
- }
-
- .language_list{
-   display: none;
- }
-
-.Menu_list{
-   display: none;
+  }
 }
 
-.title-2{
-   display: none;
+@media screen and (max-width: 992px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.header__menu{
-   display: flex;
-   gap: 10px;
+@media screen and (max-width: 556px) {
+  .header {
+    width: 100%;
+    height: auto;
 
-   button{
-      border: none;
-   }
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .search_Empty {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 375px) {
+  .header {
+    width: 100%;
+    height: auto;
 
+    h1 {
+      font-size: 24px;
+    }
 
+    .title {
+      button {
+        display: none;
+      }
+    }
 
- 
- 
+    .title-2 {
+      i {
+        color: white;
+        display: block;
+      }
+    }
+
+    .Sigin-button {
+      button {
+        display: none;
+        padding: 20px;
+        border: 2px solid black;
+        background-color: orange;
+      }
+      i {
+        display: block;
+        margin-left: -12px;
+      }
+    }
+  }
+}
