@@ -7,7 +7,7 @@
 
 .herader__container {
   width: 1400px;
-  height: auto;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,5 +17,40 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 20px;
+  background-color: black;
+}
+
+.herader__container h1 {
+  font-size: 28px;
+  color: #02c902;
+}
+
+.herader__container i {
+  width: 25px;
+  height: 15px;
+}
+
+.language_list {
+  display: none;
+}
+
+.Menu_list {
+  display: none;
+}
+
+.title-2 {
+  display: none;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.header__menu button {
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

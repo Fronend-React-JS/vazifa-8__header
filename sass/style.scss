@@ -6,10 +6,46 @@
  
  .herader__container{
     width: 1400px;
-    height: auto;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    background-color: black;
+    h1{
+      font-size: 28px;
+      color: rgb(2, 201, 2);
+    }
+
+    i{
+      width: 25px;
+      height: 15px;
+    }
  }
+
+ .language_list{
+   display: none;
+ }
+
+.Menu_list{
+   display: none;
+}
+
+.title-2{
+   display: none;
+}
+
+.header__menu{
+   display: flex;
+   gap: 10px;
+
+   button{
+      border: none;
+   }
+}
+
+
+
+
  
  
